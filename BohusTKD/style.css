@@ -1,0 +1,718 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: red;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+    height: 500px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color:red;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-img img {
+    max-width: 700px;
+    margin-right: -20px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.itf-img img {
+    max-width: 300px;
+    margin-right: -20px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.instruktör{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.instruktör-content {
+    max-width: 600px;
+    height: 800px;
+    
+}
+
+.instruktör-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+}
+
+.instruktör-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.instruktör-content h3 span {
+    color:red;
+}
+
+.instruktör-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    color:white;
+}
+.instruktör-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 300px;
+}
+
+.instruktör-img div {
+    width: 25%;  
+    margin-bottom: 40px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.instruktör-img div:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.instruktör-img img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+    border: solid white;
+    align-self: center;
+}
+
+
+.instruktör-img a:hover p {
+    color: red; 
+}
+
+.instruktör-img p {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color :#fff;
+}
+
+
+
+.omoss {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.omoss-content {
+    max-width: 600px;
+    height: 500px; 
+
+}
+
+.omoss-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+}
+
+.omoss-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.omoss-content h3:nth-of-type(3) {
+    margin-top: 50px;
+  } 
+
+.omoss-content h3 span {
+    color:red;
+}
+
+.omoss-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.omoss-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.schema {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.schema-content {
+    max-width: 600px;
+    height: 500px;
+}
+
+.schema-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.schema-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.schema-content h3 span {
+    color:red;
+}
+
+.schema-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.schema-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.teori {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.teori-content {
+    max-width: 600px;
+    height: 500px;
+}
+
+.teori-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.teori-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.teori-content h3 span {
+    color:red;
+}
+
+.teori-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.teori-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.kontakt { 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.kontakt-content {
+    max-width: 600px;
+    height: 500px;
+}
+
+.kontakt-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+}
+
+.kontakt-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.kontakt-content h3 span {
+    color:red;
+}
+
+.kontakt-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.kontakt-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.shop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+
+
+.shop-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.shop-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.shop-content h3 span {
+    color:red;
+}
+
+.shop-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.shop-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.shop-content {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+
+.bohustext-img img {
+    transition: .5s ease;
+    max-width: 450px;
+    margin-right: -100px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    color:red;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin-top: 150px;
+    
+}
+
+
+.social-media a:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 20px red;
+}
+
+
+.mappin a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    color:red;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin-top: 30px;
+    
+}
+
+
+.mappin a:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 20px red;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: red;
+    border-radius: 40px;
+    box-shadow: 0 0 10px red;
+    font-size: 16px;
+    color:black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.productcont{
+    max-width: 600px;
+    height: 500px;
+}
+
+  
+
+  .container {
+    max-width: 1000px; 
+    margin: 1em auto; 
+    background:#000000; 
+    padding:30px;
+    border-radius:5px;
+  }
+  .productcont {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  .product-image {
+    width: 200px; 
+    height: auto; 
+    margin: 20px auto 10px; 
+  }
+  .product {
+    flex-basis: calc(50% - 20px);
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+    .product:nth-child(4),
+    .product:nth-child(5),
+    .product:nth-child(6) {
+  flex-basis: calc(50% - 20px);
+}
+  
+  .product:last-child {
+    margin-right: 0;
+  }
+  .cart-container {
+    border:1px solid #E0E4CC;
+    border-radius:5px;
+    margin-top:1em;
+    padding:1em;
+  }
+  button, input[type="submit"] { 
+      border:1px solid #FA6900; 
+      color:#fff; 
+      background: #F38630; 
+      padding:0.6em 1em;
+      font-size:1em; 
+      line-height:1; 
+      border-radius: 1.2em;
+      transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+  button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+      background: #A7DBD8;
+      border-color:#69D2E7;
+      color:#000;
+      cursor: pointer;
+  }
+  table {
+    margin-bottom:1em;
+    border-collapse:collapse;
+  }
+  table td, table th {
+    text-align:left;
+    padding:0.25em 1em;
+    border-bottom:1px solid #E0E4CC;
+  }
+  #carttotals {
+    margin-right:0;
+    margin-left:auto;
+  }
+  .cart-buttons {
+    width:auto;
+    margin-right:0;
+    margin-left:auto;
+    display:flex;
+    justify-content:flex-end;
+    padding:1em 0;
+  }
+  #emptycart {
+    margin-right:1em;
+  }
+  table td:nth-last-child(1) {
+    text-align:right;
+  }
+  .message {
+    border-width: 1px 0px;
+    border-style:solid;
+    border-color:#A7DBD8;
+    color:#679996;
+    padding:0.5em 0;
+    margin:1em 0;
+  }
+  @media (max-width: 768px) {
+    .product {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+
+
+
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Bohus Taekwondo.</a>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:1;"
+            class="active">Hem</a>
+            <a href="omoss.html" style="--i:2;">Om oss</a>
+            <a href="instruktör.html" style="--i:3;">Instruktörer</a>
+            <a href="schema.html" style="--i:4;">Schema</a>
+            <a href="teori.html" style="--i:5;">Teori</a>
+            <a href="kontakt.html" style="--i:6;">Kontakt</a>
+            <a href="shop.html" style="--i:7;">Shop</a>
+        </nav>
+    </header>
+    
+    <section class="shop"> 
+        <div id="alerts"></div>
+     <div class="shop-content">
+
+             <div class="product">
+                <img class="product-image" src="Images/Mightyfist-Handskar-ITF-Blå.jpg" alt="Produktbild">
+                 <p>Mightyfist Handskar blå.</p>
+                 <p class="price">$54</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                <img class="product-image" src="Images/Mightyfist-Handskar-ITF-Röd.jpg" alt="Produktbild">
+                 <p>Mightyfist Handskar röd.</p>
+                 <p class="price">$54</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             <div class="product">
+                <img class="product-image" src="Images/Mightyfist-Fotskydd-ITF-Blå.jpg" alt="Produktbild">
+                <p>Mightyfist Fotskydd blå</p>
+                <p class="price">$59</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="Images/Mightyfist-Fotskydd-ITF-Röd.jpg" alt="Produktbild">
+                <p>Mightyfist Fotskydd röd</p>
+                <p class="price">$59</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="Images/Top-Ten-Huvudskydd-Blå.jpg" alt="Produktbild">
+                <p>Top Ten Huvudskydd blå</p>
+                <p class="price">$120</p>
+                <button class="addtocart">Add To Cart</button>
+            </div>
+             <div class="product">
+                <img class="product-image" src="Images//Top-Ten-Huvudskydd-Röd.jpg" alt="Produktbild">
+                 <p>Top Ten Huvudskydd röd</p>
+                 <p class="price">$120</p>
+                 <button class="addtocart">Add To Cart</button>
+             </div>
+             </div>
+             <div class="cart-container">
+               <h2>Cart</h2>
+               <table>
+                 <thead>
+                   <tr>
+                   <th><strong>Product</strong></th>
+                   <th><strong>Price</strong></th>
+                 </tr>
+                 </thead>
+                 <tbody id="carttable">
+                 </tbody>
+               </table>
+               <hr>
+               <table id="carttotals">
+                 <tr>
+                   <td><strong>Items</strong></td>
+                   <td><strong>Total</strong></td>
+                 </tr>
+                 <tr>
+                   <td>x <span id="itemsquantity">0</span></td>
+                  
+                   <td>$<span id="total">0</span></td>
+                 </tr></table>
+     
+                 
+               <div class="cart-buttons">  
+                 <button id="emptycart">Empty Cart</button>
+                 <button id="checkout">Checkout</button>
+               </div>
+             </div>
+             <div class="bohustext-img">
+                <img src="Images/bohustkdtext.png">
+                </div>
+     </section>
+
+    <script src="shop.js"></script>
+
+    
+</body>
+</html>
